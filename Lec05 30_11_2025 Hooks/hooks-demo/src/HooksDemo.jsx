@@ -47,7 +47,8 @@ export default function HooksDemo(props) {
 
       name1 = {names.name1} <br />
       name2= {names.name2} <br />
-      <button onClick={() => setNames({ name1: 'dora', name2: names.name2 })}>change name1</button>
+      <button onClick={() => setNames({...names,  name1: 'dora' })}>change name1 opt1</button>
+      <button onClick={() => setNames({ name1: 'dora', name2: names.name2 })}>change name1 opt2</button>
       <button onClick={btnCNAC}>change count and name</button>
     </div>
   )
